@@ -1,0 +1,182 @@
+<script>
+    "use strict"
+    console.log("hii");
+
+
+
+    //base class
+ class Pieces  {
+        constructor(color,position,image,id,points,isAlive)
+        {
+            this.color = color;
+            this.position = position; 
+            this.image = image;
+            this.id = id;
+            this.points = points;
+            this.isAlive = isAlive;
+        }
+
+    }
+
+   /* // OBJECT OF kING IS CREATED
+    const King ={
+          color: "white",
+          position: "4,5",
+          image: "imageKing",
+          id : "W1",
+          point : "10"
+
+    };
+     console.log(King.color);*/
+    
+  /* 
+  const myPiece = new pieces("red","0,0","imagePieces","ID_pieces","000");
+        console.log(myPiece.position);
+*/
+ class King extends Pieces {
+        constructor(color,position,id,isAlive) 
+        {
+            super(color,position,"King",id,"Max",isAlive);
+        }
+       static movement(){
+            return "King moves 1 step";
+        }
+   }
+
+console.dir(King);   
+   //var BlackKing = Object.create(Object.create(pieces));
+   
+   //object of blackKing is created and calling methods of class 
+ /*  var BlackKing =Object.create(King);
+ BlackKing.color="Black";
+ console.log(BlackKing.color);
+ console.log(BlackKing.movement());
+BlackKing.live="dead";
+console.log(BlackKing.live);
+console.log(BlackKing);
+*/
+   // console.log(King.isPrototypeOf(BlackKing));
+   // console.log(pieces.isPrototypeOf(BlackKing));
+   //console.log(Base.isPrototypeOf(subInstance))
+    //const whiteKing = new King("white","4,A","White01");
+    //King.prototype = Object.create(pieces.prototype);
+   class Queen extends Pieces {
+        constructor(color,position,id,isAlive)
+        {
+            super(color,position,"Queen",id,"9",isAlive);
+        }
+        static movement(){
+            return "King moves * step";
+        }
+    }
+ //var k =Object.create(Object.create(Pieces));
+   //var k = new King("white","A5","imageKing","4*0",1);
+   //console.log(k.id);
+
+   class Bishop extends Pieces {
+       constructor(color,position,id,isAlive)
+       {
+            super(color,position,"Bishop",id,"3",isAlive);         
+       }
+       static movement(){
+            return "King moves * step";
+        }
+   }
+
+   class Rook extends Pieces{
+       constructor(color,position,id,isAlive)
+       {
+           super(color,position,"Rook",id,"5",isAlive);
+       }
+       static movement(){
+            return "King moves * step";
+        }
+   }
+ 
+   class Knight extends Pieces{
+       constructor(color,position,id,isAlive)
+       {
+           super(color,position,"Knight",id,"3",isAlive);
+       }
+       static movement(){
+            return "Knight moves 2-1/2 step";
+        }
+   }
+  
+  class Pawn extends Pieces
+  {
+      constructor(color,position,id,isAlive){
+          super(color,position,"Pawn",id,"1",isAlive);
+      }
+      static movement(){
+            return "Pawn moves 1 step";
+        }
+  }
+ 
+
+ var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+var BlackKing = new King("Black","E1","BlackKing","alive");
+console.log(BlackKing);
+
+</script>

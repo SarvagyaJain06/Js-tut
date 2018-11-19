@@ -1,0 +1,32 @@
+<script>
+    console.log("Hi Sarvagya");
+    const abc = {
+        x : "67",
+        get co () {
+            return this.x;
+        },
+        set co(value){
+            this.x = value;
+        },
+    }
+    console.log(abc.x);
+    abc.co = 12.252;
+    console.log(abc.co);
+//prevent Extension
+Object.preventExtensions(abc);
+abc.cc ="bffj";
+console.log(abc.cc);
+
+//seal
+    Object.seal(abc);
+    abc.x = "jhkc";
+    console.log(abc.x);
+    abc.y = "45";
+    console.log(abc.y);
+//freeze   
+object.freeze(abc);
+   abc.co = "33.34";
+   console.log(abc.x);
+   abc.yo ="55";
+   console.log(abc.yo);
+</script>
